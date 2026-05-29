@@ -1,4 +1,4 @@
-# Launch VS Code Remote-SSH from a compute session on clusters
+# Launch VS Code Remote-SSH from a compute session/node on clusters
 
 If you need to work on clusters to satisfy your compute need, VS Code Remote-SSH is a great extension for allowing you to connect to your cluster using VSCode, browse files, and run things interactively. However, this does require quite a bit of resource on the cluster, and if you connect the seesion directly on the login node, this can cause a slow down for everyone as the log in node may not have a lot of compute resources.
 
