@@ -7,10 +7,10 @@ A recommended way to do it is to run it through a compute session through proxy 
 ## Set up the script
 1. Clone to repo to anywhere you want on your local machine
 2. Ensure you have your cluster log in node set up in ``~/.ssh/config``
-3. Change the following argument in the ``launch_vscode_on_compute.sh`` script:
-   - REMOTE_USER (both instances, your killarney user name)
-   - WORKING_DIR (your vscode landing directory) 
-   - SLURM_ARGS (your resource allocation requirement)
+3. Change the following argument in the ``launch_vscode_on_compute.sh`` script (and make sure you wrap everything in quotation):
+   - REMOTE_USER (both instances, your cluster user name)
+   - WORKING_DIR (your vscode landing directory, where you want vscode to display on the left when you open the window) 
+   - SLURM_ARGS (your resource allocation requirement, i.e: `--account`, `--mem`, etc.)
 4. Set up the proxy jumps by adding the following to your ``~/.ssh/config``
 ```
 Host *
